@@ -9,7 +9,7 @@ import tatun.service.CategoryService;
 import java.util.List;
 
 public class Config {
-    @Test
+    //@Test
     public void test() {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 

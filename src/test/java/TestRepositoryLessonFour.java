@@ -14,7 +14,7 @@ import tatun.service.CompanyService;
 import java.util.List;
 
 public class TestRepositoryLessonFour {
-    @Test
+    //@Test
     public void test() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -24,7 +24,7 @@ public class TestRepositoryLessonFour {
         adService.add("Продам квартиру на Московке", "Цена 3.000.000 руб.", "222-333", "Строй-инвест", "Недвижимость");
     }
 
-    @Test
+    //@Test
     public void testFindAdById() {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
@@ -32,7 +32,7 @@ public class TestRepositoryLessonFour {
         Ad ad = adRepository.getOne(3);
     }
 
-    @Test
+    //@Test
     public void testGetCompanyByAd() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -42,7 +42,7 @@ public class TestRepositoryLessonFour {
         Company company = companyService.findByAd(adService.findById(3));
     }
 
-    @Test
+    //@Test
     public void testGetAdsByCategory() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
