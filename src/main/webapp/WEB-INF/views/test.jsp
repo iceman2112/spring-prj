@@ -1,11 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
-
 <html>
-<head>
-    <title>Тест</title>
-</head>
 <body>
-    <p>Тест</p>
+<h1>
+    Hello, ${name}.
+</h1>
 </body>
 </html>
